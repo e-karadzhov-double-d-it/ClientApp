@@ -1,0 +1,22 @@
+@import "../../../../../styles.scss";
+
+.bg-img {
+  background-image: url("../../../../../assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: to-rem(480px);
+
+ .f-short-title, .s-short-title {
+    color: $white;
+  }
+
+  .f-short-title{
+    font-size: to-rem(66px);
+  }
+
+  @include media-breakpoint-up(md) {
+    background-attachment: fixed;
+    min-height: to-rem(840px);
+  }
+}
