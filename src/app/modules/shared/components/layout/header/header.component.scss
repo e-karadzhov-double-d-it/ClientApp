@@ -8,7 +8,7 @@
 .logo,
 .logo:hover {
   font-size: to-rem(18px);
-  color: color('black');
+  color: $black;
 
   @include media-breakpoint-up(md) {
     font-size: to-rem(24px);
@@ -27,7 +27,12 @@ a {
 
 nav {
   a {
-    color: color('black');
+    color: $dark-blue;
     transition: all 0.15s;
+  }
+
+  a:hover {
+    color: $white;
+    background: $dark-blue ;
   }
 }

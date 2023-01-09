@@ -14,11 +14,6 @@ export class AppComponent implements OnInit {
         this.navigation = [
             { name: "Home", route: "/" },
             { name: "About", route: "/about" },
-            { name: "News", route: "/news" },
-            { name: "Ranking", route: "/rankings" },
-            { name: "Video", route: "/videos" },
-            { name: "Program", route: "/programs" },
-            { name: "Stars", route: "/stars" },
         ];
     }
 }

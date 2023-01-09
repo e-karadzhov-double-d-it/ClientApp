@@ -7,7 +7,10 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
 })
 export class SideNavComponent {
     @Output() sidenavClose = new EventEmitter();
-    @Input() navigation: { name: string; route: string }[] = [];
+    @Input() navigation: {
+        name: string;
+        route: string;
+    }[] = [];
 
     constructor() {}
 

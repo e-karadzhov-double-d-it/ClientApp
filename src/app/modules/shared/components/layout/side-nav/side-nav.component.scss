@@ -1,18 +1,20 @@
-@import '../../../../../../styles.scss';
+@import "../../../../../../styles.scss";
 
-a {
-  color: color('black');
-  transition: all 0.15s;
+mat-nav-list {
+  a {
+    transition: all 0.15s;
+    background: $white;
 
-  // @include hover-focus {
-  //   background: color('white');
-  //   color: color('black');
-  // }
+    .nav-caption {
+      color: $black;
+    }
+  }
 
-//   @include media-breakpoint-up(md) {
-//     @include hover-focus {
-//       color: color('black');
-//       background: none;
-//     }
-//   }
- }
+  .active-link {
+    background: $dark-blue;
+
+    .nav-caption{
+      color: $white;
+    }
+  }
+}

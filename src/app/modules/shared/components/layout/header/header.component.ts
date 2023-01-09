@@ -9,7 +9,10 @@ export class HeaderComponent {
     @Output() public sidenavToggle = new EventEmitter();
     @Output() public sidenavClose = new EventEmitter();
 
-    @Input() navigation: { name: string; route: string }[] = [];
+    @Input() navigation: {
+        name: string;
+        route: string;
+    }[] = [];
 
     constructor() {}
 
