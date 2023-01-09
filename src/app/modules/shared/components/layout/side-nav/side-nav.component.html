@@ -1,6 +1,6 @@
 <mat-nav-list>
   <ng-container *ngFor="let item of navigation">
-    <a [routerLink]="item.route" (click)="onSidenavClose()" class="text-decoration-none" routerLinkActive="active-link"
+    <a class="text-decoration-none" [routerLink]="item.route" (click)="onSidenavClose()" routerLinkActive="active-link"
       [routerLinkActiveOptions]="{exact: true}" mat-list-item>
       <span class="nav-caption">{{ item.name }}</span>
     </a>

@@ -27,12 +27,11 @@ a {
 
 nav {
   a {
-    color: $dark-blue;
     transition: all 0.15s;
+    color: $black;
   }
 
-  a:hover {
-    color: $white;
-    background: $dark-blue ;
+  .active-link,a:hover {
+    border-bottom: 1px solid $dark-blue;
   }
 }

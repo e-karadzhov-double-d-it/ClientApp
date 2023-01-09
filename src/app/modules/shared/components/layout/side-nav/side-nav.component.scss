@@ -10,10 +10,10 @@ mat-nav-list {
     }
   }
 
-  .active-link {
+  .active-link, a:hover {
     background: $dark-blue;
 
-    .nav-caption{
+    .nav-caption {
       color: $white;
     }
   }
