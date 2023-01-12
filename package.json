@@ -6,7 +6,7 @@
     "start": "ng serve --open --hmr && prettier --check . && prettier --write .",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "deploy":"ng build && git checkout gh-pages && ng deploy --base-href=https://e-karadzhov-double-d-it.github.io/ClientApp/ && git checkout main",
+    "deploy":"git checkout gh-pages && ng deploy --base-href=https://e-karadzhov-double-d-it.github.io/ClientApp/ && git checkout main",
     "test": "ng test"
   },
   "private": true,
